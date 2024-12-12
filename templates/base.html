@@ -11,6 +11,9 @@
   <link id="stylesheet" rel="stylesheet" type="text/css" href="/main.css">
   <link id="stylesheet" rel="stylesheet" type="text/css" href="/typography.css">
   <link rel="stylesheet" href="/foundation.min.css">
+  {% block rss %}
+  <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+  {% endblock %}
   <script src="/highlight.min.js"></script>
   <script defer>hljs.highlightAll();</script>
 </head>
