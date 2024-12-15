@@ -14,6 +14,7 @@
   {% block rss %}
   <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
   {% endblock %}
+  <link rel="me" href="https://toot.cat/@rey"><!-- TODO: Don't hardcode this -->
   <script src="/highlight.min.js"></script>
   <script defer>hljs.highlightAll();</script>
 </head>
