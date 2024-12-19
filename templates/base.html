@@ -19,6 +19,8 @@
   <script defer>hljs.highlightAll();</script>
 </head>
 
+<body onload="getTheme()">
+
 <div class="flex items-start border-slate-50">
   <a href="/">
     <div class="rounded-full">
@@ -41,13 +43,11 @@
 
 <hr class="border-amber-200" />
 
-<body onload="getTheme()">
   <section>
     <div>
       {% block content %} {% endblock %}
     </div>
   </section>
-</body>
 
 <div class="flex justify-end my-4">
   <div class="flex flex-col">
@@ -57,5 +57,7 @@
         href="https://github.com/kyoheiu/emily_zola_theme">emily</a> (modified)</small></div>
   </div>
 </div>
+
+</body>
 
 </html>
