@@ -3,7 +3,7 @@
 {% block title %}
   <title>{{ page.title }} | {{ config.title }}</title>
   <meta name="title" content="{{ page.title }} | {{ config.title }}">
-  <meta name="description" content="{{ page.content | truncate(length=200) }}">
+  <meta name="description" content="{{ page.content | striptags | truncate(length=200) }}">
   <meta property="og:url" content="{{ current_url }}">
   <meta property="og:site_name" content="{{ config.title }}">
 {% endblock %}
